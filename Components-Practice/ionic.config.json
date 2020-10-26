@@ -1,0 +1,7 @@
+{
+  "name": "Energy Monitoring App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
