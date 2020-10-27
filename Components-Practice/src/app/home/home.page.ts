@@ -33,6 +33,26 @@ export class HomePage {
       icon: 'book-outline',
       name: 'Card',
       redirectTo: '/cards'
+    },
+    {
+      icon: 'checkmark-circle-outline',
+      name: 'Checkbox',
+      redirectTo: '/checkbox'
+    },
+    {
+      icon: 'calendar-outline',
+      name: 'Calendar',
+      redirectTo: '/date-time'
+    },
+    {
+      icon: 'chevron-forward-circle-outline',
+      name: 'Fab Buttons',
+      redirectTo: '/fab'
+    },
+    {
+      icon: 'hammer-outline',
+      name: 'Input Forms',
+      redirectTo: '/input'
     }
   ];
 

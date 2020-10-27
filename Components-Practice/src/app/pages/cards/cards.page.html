@@ -6,11 +6,6 @@
       <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
       <ion-card-title>
         Card Title
-        <ion-buttons>
-          <ion-button color="danger" (click)="onClick()">
-            <ion-icon slot="icon-only" [name]="favorite ? 'heart': 'heart-outline'"></ion-icon>
-          </ion-button>
-        </ion-buttons>
       </ion-card-title>
     </ion-card-header>
 
@@ -19,5 +14,25 @@
       and climb a mountain or spend a week in the woods. Wash your spirit clean.
     </ion-card-content>
   </ion-card>
-
+  <ion-card>
+    <ion-item>
+      <ion-buttons slot="end">
+        <ion-button color="danger" (click)="onClick()">
+          <ion-icon slot="icon-only" [name]="favorite ? 'heart': 'heart-outline'"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-label>Titulo</ion-label>
+    </ion-item>
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="https://www.pcgamesn.com/wp-content/uploads/2019/09/minecraft-village-1200x675.jpg">
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
 </ion-content>
