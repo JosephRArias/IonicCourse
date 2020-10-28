@@ -1,0 +1,12 @@
+[
+  {
+    "icon": "wallet-outline",
+    "name": "Incomes",
+    "redirectTo": "/incomes"
+  },
+  {
+    "icon": "cash-outline",
+    "name": "Expenses",
+    "redirectTo": "/expenses"
+  }
+]
