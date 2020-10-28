@@ -53,6 +53,16 @@ export class HomePage {
       icon: 'hammer-outline',
       name: 'Input Forms',
       redirectTo: '/input'
+    },
+    {
+      icon: 'list-outline',
+      name: 'Grid',
+      redirectTo: '/grid'
+    },
+    {
+      icon: 'infinite-outline',
+      name: 'Infinite',
+      redirectTo: '/infinite'
     }
   ];
 
