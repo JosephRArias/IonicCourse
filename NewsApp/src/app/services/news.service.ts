@@ -16,4 +16,7 @@ export class NewsService {
   getTopHeadlines() {
     return this.httpClient.get<News>(`${this.newsUrl}/top-headlines?country=us&category=business&apiKey=${this.apiKey}`);
   }
+  getTopHeadlinesByCategory(category: string) {
+    return this.httpClient.get<News>(`${this.newsUrl}/top-headlines?country=us&category=${category}&apiKey=${this.apiKey}`);
+  }
 }
