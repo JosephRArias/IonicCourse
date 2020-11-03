@@ -18,4 +18,20 @@ export class Tab1Page implements OnInit {
       this.news.push(...res.articles);
     });
   }
+  loadData(event) {
+    this.loadArticles(event);
+  }
+  loadArticles(event?) {
+    this.newsService.getTopHeadlines().subscribe(res => {
+      console.log(res.articles);
+      this.news.push(...res.articles);
+      if (event) {
+        event.target.complete();
+      }
+      if (res.articles.length == 0) {
+        event.target.disabled = true;
+        return;
+      }
+    });
+  }
 }
