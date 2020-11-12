@@ -1,13 +1,23 @@
-<ion-card color="dark">
-  <ion-card-header>
-    <ion-card-title>{{new.title}}</ion-card-title>
-    <ion-card-subtitle>
-      <span class="source-name">{{new.source.name}}</span>
-    </ion-card-subtitle>
-  </ion-card-header>
+<ion-card color="dark" @fadein>
+  <ion-item color="dark" class="card-title">
+    <ion-buttons slot="end">
+      <ion-button fill="clear" (click)="showOptions()">
+        <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <label (click)="openArticle()">{{article.title}}</label>
+  </ion-item>
+  <ion-item color="dark">
+    <span #card class="source-name">{{article.source.name}}</span>
+    <!--<div class="button-more">
+      <ion-button fill="clear" (click)="showOptions()">
+        <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </div>-->
+  </ion-item>
 
-  <ion-img *ngIf="new.urlToImage" [src]="new.urlToImage"></ion-img>
-  <ion-card-content>
-    <p>{{new.description}}</p>
+  <ion-img *ngIf="article.urlToImage" [src]="article.urlToImage"></ion-img>
+  <ion-card-content (click)="openArticle()">
+    <p>{{article.description}}</p>
   </ion-card-content>
 </ion-card>

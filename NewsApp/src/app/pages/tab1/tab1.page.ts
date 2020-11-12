@@ -14,7 +14,6 @@ export class Tab1Page implements OnInit {
 
   ngOnInit() {
     this.newsService.getTopHeadlines().subscribe(res => {
-      console.log(res.articles);
       this.news.push(...res.articles);
     });
   }
@@ -23,7 +22,6 @@ export class Tab1Page implements OnInit {
   }
   loadArticles(event?) {
     this.newsService.getTopHeadlines().subscribe(res => {
-      console.log(res.articles);
       this.news.push(...res.articles);
       if (event) {
         event.target.complete();

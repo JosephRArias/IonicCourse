@@ -36,3 +36,9 @@
     stroke: red !important;
     fill: red !important;
 }
+.favorite-button, .favorite-button .action-sheet-icon{
+    color: red !important;
+}
+.tab-selected{
+    color: var(--ion-color-primary) !important;
+}
