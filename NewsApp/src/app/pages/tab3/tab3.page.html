@@ -7,5 +7,11 @@
 </ion-header>
 
 <ion-content color="dark">
-  <app-noticias [news]="dataService.favoriteNews" [inFavouritesScreen]="true"></app-noticias>
+  <ion-slides mode="ios" *ngIf="dataService.favoriteNews.length===0" [options]="sliderOpts">
+    <ion-slide>
+      <h1>No hay favoritos</h1>
+    </ion-slide>
+  </ion-slides>
+  <app-noticias *ngIf="dataService.favoriteNews.length>0" [news]="dataService.favoriteNews" [inFavouritesScreen]="true">
+  </app-noticias>
 </ion-content>
