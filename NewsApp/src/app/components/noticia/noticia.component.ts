@@ -44,10 +44,11 @@ export class NoticiaComponent implements OnInit {
       this.favouriteButton = {
         text: 'Remove from Saved',
         icon: 'trash',
+        cssClass: 'favorite-button',
         handler: () => {
           this.dataService.deleteArticle(this.article);
         }
-      }
+      };
     } else {
       this.favouriteButton = {
         text: 'Save',
@@ -55,7 +56,7 @@ export class NoticiaComponent implements OnInit {
         handler: () => {
           this.dataService.saveArticle(this.article);
         }
-      }
+      };
     }
     this.presentActionSheet();
   }

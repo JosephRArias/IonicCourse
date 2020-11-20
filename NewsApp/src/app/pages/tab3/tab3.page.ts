@@ -10,7 +10,7 @@ export class Tab3Page {
   sliderOpts = {
     allowSlidePrev: false,
     allowSlideNext: false
-  }
+  };
   constructor(public dataService: SaveDataService) { }
 
 }
